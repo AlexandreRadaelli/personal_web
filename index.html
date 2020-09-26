@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html>
+
+<style>
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+
+height: 100%;
+width: 320px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #1d1616;
+overflow-x: hidden;
+padding-top: 20px;
+border-style: inset;
+border-color: #555555;
+border-left: none;
+border-top: none;
+border-bottom: none;
+border-width: 6px;
+}
+
+ 
+/* Style the sidenav links */
+
+.sidenav a {
+  
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 22.5px;
+color: #555555;
+display: block;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+
+}
+
+.sidenav-p {
+  
+  color: white;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 6px;
+  width: 95%;
+  padding: 4px 6px 4px 6px;
+  font-size: 16px;
+  border-style: dotted;
+  border-radius: 8px;
+  
+}
+
+.logo-image{
+
+width: 290px;
+height: 290px;
+border-radius: 50%;
+overflow: hidden;
+margin-top: 10px;
+cursor: auto;
+
+}
+  
+.center {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+
+}
+
+/* On mouse-over */
+.sidenav a:hover {
+
+color: #ffffff;
+
+}
+      
+/* Main content */
+.main {
+
+margin-left: 320px; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+
+}
+.subtit {
+  border-style: outset;
+  border-color: #f2f2f2;
+  background-color: #f2f2f2	;
+
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+
+
+}
+</style>
+
+
+
+</head>
+<body>
+     
+<div class="sidenav">
+  <a class="navbar-brand">
+    <div class="logo-image">
+          <img src="/image/DSC_0102-3.png" alt="Sorry image could not load" class="center">
+    </div>
+</a>
+<br>
+<p class="sidenav-p">16y/o looking for summer 2021 lab shadow</p>
+
+<br>
+
+  <a href="#now">What I'm working on NOW</a>
+  <a href="#about">A little bit about me</a>
+  <a href="#experience">My previous work experience</a>
+  <a href="#accomplishements">Things I've done</a>
+  <a href="#contact">How to contact me</a>
+</div>
+
+
+<div class="main">
+<hr style="opacity:0">
+<h2 id="now" class="subtit"> What I'm working on at the moment </h2>
+<p><b>The topics I'm working RIGHT NOW on are :</b></p>
+<p>
+  <li>Completing an online <i>nuclear physics</i> class!</li>
+  <li>Learning introductions to <i>quantum computing</i>!</li>
+  <li>Keeping updated on the <i>newest</i> techs!</li>
+</p>
+  <hr style="opacity:0">
+  <h2 id="about" class="subtit">A little bit about me</h2>
+
+  <p>Hey, so I'm an innovative youngster from Canada and I'm facinated by new techs!</p>
+  <p>I love energy production! From nuclear to solar... everything renewable!</p>
+  <p>The new major breaktroughs like brain computer interfacing, quantum supremacy and newer quantum computers are <b>insane!!!</b> The world is becoming so interesting! So many things to explore! I'm Alex and I'm 16 and I'm really intersted in many things!
+  I have no clue what to go into! So why not learn about them all! Right now, I'm <i>speeeeding</i> through an online nuclear physics course, with a goal of capting most of the info to be able to write/make a video or article about everything that I've learnt!</p>
+  <p>To see what I've accomplished so far check out the "Things I've done" section of my website!</p>
+
+  <br>
+  <h2 id="experience" class="subtit">My previous work experiences</h2>
+  <b>Toronto Gymnastics International</b> <i>- Gymnastics Coach</i>
+  <p>So I started working when I was ~14, always loved teaching. I've worked there now for around 1 year and a half, considering the current global events. But when I was coaching, there was always a mindset that a coach was expected to have.
+  You only coach them for 1-2 hours a week, what can you really do. And surprising to some, you can do a lot. As the coach they look up to you so it is a given that you must portray good habits for the kids. Thus, I dedicated myself, trying my best to help every single one of those kids and impact them in a positive way. As of now, I hope to the best for all of them.
+  </p>
+
+      <br>
+  <h2 id="accomplishements" class="subtit">Things I've done</h2>
+  <li>I've wroked through the mechanics chapter's in the book Hugh D. Young, Roger A. Freedman - Sears and Zemansky's University Physics with Modern Physics 13th Edition. </li>
+  <li>Currently almost done the electrodynamics in that same book.</li>
+  <li>I've officially built my own website</li>
+
+
+      <h2 id="contact" class="subtit">How to contact me</h2>
+      <p>If you guys are interested in cool stuff like me <i>(even if its not what I've mentionned here)</i> dont hesistate to reach out to me!</p>
+      <p>alex.robert.radaelli@gmail.com</p>
+      <p>https://medium.com/@alex.robert.radaelli</p>
+      <p>https://github.com/AlexandreRadaelli</p>
+      <p></p>
+<br>
+<br>
+<br>
+<p>&#169; Copyright 2020 Alex Radaelli - All Rights Reserved.</p>
+
+</div>
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+// Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 600, function(){
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
+});
+});
+</script>
+
+
+</html>
