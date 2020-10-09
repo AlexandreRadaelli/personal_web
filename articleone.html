@@ -1,139 +1,10 @@
 <!doctype html>
 
 <html>
-
+<head>
 <style>
-
-/* Sidenav */
-
-.sidenav {
-
-height: 100%;
-width: 320px;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: #1d1616;
-overflow-x: hidden;
-padding-top: 20px;
-border-style: inset;
-border-color: #555555;
-border-left: none;
-border-top: none;
-border-bottom: none;
-border-width: 6px;
-}
-
- 
-/* Style sidenav links */
-
-.sidenav a {
-  
-padding: 6px 8px 6px 16px;
-text-decoration: none;
-font-size: 22.5px;
-color: #555555;
-display: block;
-border: none;
-background: none;
-width: 100%;
-text-align: left;
-cursor: pointer;
-outline: none;
-
-}
-
-.sidenav-p {
-  
-  color: #a6a6a6;
-  box-sizing: border-box;
-  margin: 0px 0px 0px 6px;
-  width: 95%;
-  padding: 4px 6px 4px 6px;
-  font-size: 16px;
-  border-style: dotted;
-  border-radius: 8px;
-  
-}
-
-.logo-image{
-
-width: 290px;
-height: 290px;
-border-radius: 50%;
-overflow: hidden;
-margin-top: 10px;
-cursor: auto;
-
-}
-  
-.center {
-
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-
-}
-
-/* mouse-over */
-.sidenav a:hover {
-
-color: #ffffff;
-
-}
-      
-/* Main content */
-.main {
-
-margin-left: 320px; /* Same as the width of the sidenav */
-font-size: 20px; /* Increased text to enable scrolling */
-padding: 0px 10px;
-
-}
-.main h2 {
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 1px;
-}
-.main p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-style: normal;
-    letter-spacing: 1px;
-    line-height: 140%;
-}
-.main li {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 540;
-    line-height: 160%;
-}
-.subtit {
-  border-style: outset;
-  border-color: #f2f2f2;
-  background-color: #f2f2f2	;
-
-}
-.line {
-    margin-left: 15px;
-    margin-right: 30px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
-
-
-}
+<link rel="stylesheet" href="./article.css">
 </style>
-
-
-
 </head>
 <body>
      
@@ -142,50 +13,53 @@ padding: 0px 10px;
     <div class="logo-image">
           <img src="/image/DSC_0102-3.png" alt="Sorry image couldn't load" class="center">
     </div>
-</a>
+  </a>
 <br>
+ 
 <p class="sidenav-p">16y/o looking for summer 2021 lab shadow</p>
 
 <br>
 <br>
-  <a href="#now">What I'm working on</a>
+  <a href="https://alexradaelli.com/#now">What I'm working on</a>
   <hr class="line" color="555555">
-  <a href="#about">A bit about me</a>
+  <a href="https://alexradaelli.com/#about">A bit about me</a>
   <hr class="line" color="555555">
-  <a href="#experience">Previous work experience</a>
+  <a href="https://alexradaelli.com/#experience">Previous work experience</a>
   <hr class="line" color="555555">
-  <a href="#accomplishements">Things I've done</a>
+  <a href="https://alexradaelli.com/#accomplishements">Things I've done</a>
   <hr class="line" color="555555">
-  <a href="#contact">How to contact me</a>
+  <a href="https://alexradaelli.com/#contact">How to contact me</a>
 
 </div>
 
 
 <div class="main">
 
-<h3><b>Why doesn’t a nuclear reactor blow up?</b></h3>
-<p>
-    In one sentence, <br>
+<h1><b>Why doesn’t a nuclear reactor blow up?</b></h1>
+
+ <h2>In one sentence, </h2>
     The reason a nuclear reactor doesn’t go boom boom is because of this special thing called neutron leakage.<br>
     Simply put, nuclear engineers regulate the amount of neutrons escaping the nuclear reaction to keep it the same size. This regulation is unkempt thanks to a rather complicated six factor equation so let's quickly run it down.
     <br>
-    <li>So let’s just start with our dependent value k which represents the growth of the number of neutrons from one generation of the nuclear reaction to the next. Thus the aimed goal of the nuclear engineers is to have k=1 so the reactions keep the same size. Now lets define each of our factors, however, before we begin let's establish that there are 3 steps to a neutrons life in a reactor;
-    Fission which releases newborn neutrons with high energy, called fast neutrons.</li>
+    <p>
+    So let’s just start with our dependent value k which represents the growth of the number of neutrons from one generation of the nuclear reaction to the next. Thus the aimed goal of the nuclear engineers is to have k=1 so the reactions keep the same size. Now lets define each of our factors, however, before we begin let's establish that there are 3 steps to a neutrons life in a reactor; </p>
+    <li>Fission which releases newborn neutrons with high energy, called fast neutrons.</li>
     <li>Resonance which is a step to slow down this fast neutron to an energy level that can be fissile, since if there’s too much energy it would just blow away the atom which is supposed to absorb the neutron. These slower moving neutrons are called thermal neutrons.</li>
     <li>Thermal absorption which is when the neutron is absorbed by a fissile atom to then produce fission and restart these 3 steps.</li> <br>
-    Now that you get the gist of it, let's start defining stuff !<br>
-    Epsilon(ε) is simple, it's the number of neutrons born through fission. When a neutron is absorbed by U-235 around 2.43 neutrons are born through the reaction!<br>
-    P is the resonance escape probability, which is the percentage of those big boy neutrons that don’t get stopped completely while slowing down in the resonance area. <br>
-    Eta(η) is the reproductive factor. Thus is the number of neutrons born, divided by the number of neutrons to create them.<br>
-    F is the utilisation factor, so the number of neutrons absorbed by the fuel, divided by the number of neutrons absorbed by the whole reactor.<br>
-    𝚲fThe probability that a fast neutron(high energy neutron) will not escape the reactor. Usually is around 0.995, so 99.5% chance that the neutron stays.<br>
-    𝚲thThe probability that a thermal neutron(low energy neutron) will escape the reactor. Around 98% chance that they stay, so a higher chance that the neutron goes on vacation outside the reactor core.<br>
+ 
+    <h2>Now that you get the gist of it, let's start defining stuff ! </h2>
+ <br>
+   <li> Epsilon(ε) is simple, it's the number of neutrons born through fission. When a neutron is absorbed by U-235 around 2.43 neutrons are born through the reaction!<br></li>
+   <li> P is the resonance escape probability, which is the percentage of those big boy neutrons that don’t get stopped completely while slowing down in the resonance area. <br></li>
+   <li> Eta(η) is the reproductive factor. Thus is the number of neutrons born, divided by the number of neutrons to create them.<br></li>
+   <li> F is the utilisation factor, so the number of neutrons absorbed by the fuel, divided by the number of neutrons absorbed by the whole reactor.<br></li>
+   <li> 𝚲fThe probability that a fast neutron(high energy neutron) will not escape the reactor. Usually is around 0.995, so 99.5% chance that the neutron stays.<br></li>
+   <li> 𝚲thThe probability that a thermal neutron(low energy neutron) will escape the reactor. Around 98% chance that they stay, so a higher chance that the neutron goes on vacation outside the reactor core.<br></li>
     <br>
-    Now that we understand what dictates whether a nuclear reaction is getting bigger or smaller and how to calculate it, we can easily explain why a nuclear reactor doesn’t go kaboom! The biggest reason is because nuclear engineers are able to alter some of those factors. For example:
+   <p> Now that we understand what dictates whether a nuclear reaction is getting bigger or smaller and how to calculate it, we can easily explain why a nuclear reactor doesn’t go kaboom! The biggest reason is because nuclear engineers are able to alter some of those factors. For example:
     If a reaction is getting bigger than the engineers feel comfortable with they can just add a stronger atom in the resonance area so the resonance probability P gets smaller as more of the big boy neutrons are getting stopped in their tracks by the stronger molecule.
     All in all, hopefully you understand just a little bit more about why nuclear reactors don't blow up! Something to keep in mind is I just named one of the ways they can lower the factor k, they’re tons of other ways they do it, I mean a safety plan, for the safety plan of the safety plan for guess what that other safety plan! Yeah, nuclear reactors are very safe, and now you know why they're so!
-    
-      <p></p>
+</p>
 <br>
 <br>
 <br>
