@@ -23,7 +23,7 @@
 <br>
      
 <br>
-     
+
  <a href="https://alexradaelli.com/now">What I'm working on</a>
   <hr class="line" color="555555">
  <a href="https://alexradaelli.com/about">A bit about me</a>
@@ -39,66 +39,91 @@
 
 <div class="main">
 
-<h1><b>Why doesn’t a nuclear reactor blow up?</b></h1>
+<h1>Why doesn’t a nuclear reactor blow up?</h1>
 
- <p>In one sentence,
-     
-    The reason a nuclear reactor doesn’t go boom boom is because of this special thing called neutron leakage.
-     
- <br>
-     
-    Simply put, nuclear engineers regulate the amount of neutrons escaping the nuclear reaction to keep it the same size. This regulation is unkempt thanks to a rather complicated six factor equation so let's quickly run it down.
+ <p>In two words,</p>
+<br>
+   <h2><b>Neutron Leakage</b></h2>
+<br> 
+
+<div class="article1image">
+   <img src="/images/reactor.jpg" alt="Sorry image couldn't load" class="center">
+  </div>
+  <hr style="opacity:0">
+
+     <p>
+ Which is basically regulating the amount of neutrons in a reactor core by letting some <i>“escape”</i>. Nuclear engineers accomplish this with the formula:
      </p>
  <br>
      
    <p>  
      
-    So let’s just start with our dependent value k which represents the growth of the number of neutrons from one generation of the nuclear reaction to the next. Thus the aimed goal of the nuclear engineers is to have k=1 so the reactions keep the same size. Now lets define each of our factors, however, before we begin let's establish that there are 3 steps to a neutrons life in a reactor; 
-   
+      And it’s called the <i>six factor formula</i>, since, guess what, it’s got six factors!<i> k</i> is the <b>growth factor</b>, kind of just shows the difference in between the amount of neutrons in one generation to the next.
+      <br>
+      <br>
+      As a little example, to keep the same amount of neutrons from one generation to the next, you would want <i>k</i> to be equal to 1. In normal terms, you’d call this <b>stable</b>, in nuclear engineering terms we call this <b>critical</b>. Before we check out what each of these factors are, let’s just see the <i>life of a neutron</i> in a nuclear reactor:
+      <br><br>
+
    </p>
-    
-     <li>Fission which releases newborn neutrons with high energy, called fast neutrons.</li>
-    
-     <li>Resonance which is a step to slow down this fast neutron to an energy level that can be fissile, since if there’s too much energy it would just blow away the atom which is supposed to absorb the neutron. These slower moving neutrons are called thermal neutrons.</li>
-    
-     <li>Thermal absorption which is when the neutron is absorbed by a fissile atom to then produce fission and restart these 3 steps.</li> 
- 
-   
+
+   <div class="article1image">
+      <img src="/images/nuclearfissionreaction.png" alt="Sorry image couldn't load" class="center">
+     </div>
+
+     <hr style="opacity:0">
+   <ol>
+     <li>It starts in a part of the reactor named the reactor core. Born through fission, these baby boys and girls have loads of energy, we’ll call them fast neutrons.</li>
+   <br>
+     <li>Since these bad babies are so full of energy that they can’t be controlled, they go through a process to calm them down… kind of like how babies mature into teens and adults. These adult-like particles are now going to be called thermal neutrons.</li>
+    <br>
+     <li>Finally, just like humans, these elementary particles have to procreate, they do this with a process called thermal absorption. The calm neutrons gets accepted into a big atom’s nucleus, then boom, two smaller nuclei are created, and with this, two to three baby neutrons are born… and the cycle starts all over again.</li> 
+   <br>
+   </ol>
+   <div class="article1image">
+      <img src="/images/neutronlife.png" alt="Sorry image couldn't load" class="center">
+     </div>
  
  <br>
  
-    <h2>Now that you get the gist of it, let's start defining stuff ! </h2>
+    <p>Now that we got the gist of the three parts of the life of a neutron, let’s start defining stuff:</p>
      
  <br>
-  
-   <li> Epsilon(ε) is simple, it's the number of neutrons born through fission. When a neutron is absorbed by U-235 around 2.43 neutrons are born through the reaction!<br></li>
-   
-   <li> P is the resonance escape probability, which is the percentage of those big boy neutrons that don’t get stopped completely while slowing down in the resonance area. <br></li>
-   
-   <li> Eta(η) is the reproductive factor. Thus is the number of neutrons born, divided by the number of neutrons to create them.<br></li>
-  
-   <li> F is the utilisation factor, so the number of neutrons absorbed by the fuel, divided by the number of neutrons absorbed by the whole reactor.<br></li>
-   
-   <li> 𝚲fThe probability that a fast neutron(high energy neutron) will not escape the reactor. Usually is around 0.995, so 99.5% chance that the neutron stays.<br></li>
-   
-   <li> 𝚲thThe probability that a thermal neutron(low energy neutron) will escape the reactor. Around 98% chance that they stay, so a higher chance that the neutron goes on vacation outside the reactor core.<br></li>
-   
+  <ul>
+     <br>
+   <li><b>Epsilon(ε)</b> is simple, it’s the number of neutrons born in each generation.<br></li>
+   <hr style="opacity:0">
+   <li><b>P</b> is the resonance escape probability, which is the percentage of those baby neutrons that don’t mature and are too full of energy to start a new family. <br></li>
+   <hr style="opacity:0">
+   <li><b> Eta(η)</b> is the reproductive factor. he number of baby neutrons, divided by the number of parent neutrons.<br></li>
+   <hr style="opacity:0">
+   <li><b> F</b> is the utilisation factor, so the number of neutrons who started a family divided by the number of them who didn’t.<br></li>
+   <hr style="opacity:0">
+   <li><b> Delta-f (𝚲f)</b> The probability that a baby neutron(fast neutron) will stay in the reactor. Usually is around 0.995%.<br></li>
+   <hr style="opacity:0">
+   <li><b> Delta-th (𝚲th)</b> The probability that an adult neutron(thermal neutron) will stay in the reactor. Around 98% of them stay, so it’s more likely that an adult neutron goes on vacation compared to a baby neutron, not too surprising.<br></li>
+   <br>  
+</ul>
 <br>
   
    <p> 
         
-    Now that we understand what dictates whether a nuclear reaction is getting bigger or smaller and how to calculate it, we can easily explain why a nuclear reactor doesn’t go kaboom! The biggest reason is because nuclear engineers are able to alter some of those factors. For example:
-    If a reaction is getting bigger than the engineers feel comfortable with they can just add a stronger atom in the resonance area so the resonance probability P gets smaller as more of the big boy neutrons are getting stopped in their tracks by the stronger molecule.
-    All in all, hopefully you understand just a little bit more about why nuclear reactors don't blow up! Something to keep in mind is I just named one of the ways they can lower the factor k, they’re tons of other ways they do it, I mean a safety plan, for the safety plan of the safety plan for guess what that other safety plan! Yeah, nuclear reactors are very safe, and now you know why they're so!
+      Now that we know how to calculate whether a nuclear reaction will get bigger or smaller, we see how nuclear engineers regulate the reaction… by controlling these factors! Here are a couple of ways that they accomplish this goal:
 
    </p>
-     
+   <br><br>
+   <ul>
+   <li>They can <b>“employ worse teachers”</b> so that less baby neutrons mature to become adult neutrons, resulting in less procreation. <br></li>  
+   <hr style="opacity:0">
+   <li>They can <b>rearrange or change the fuel</b>, so make it more difficult for the adult neutrons left to procreate. <br></li>  
+   <hr style="opacity:0">
+   <li>Lastly, there’s always a fallback plan, although expensive, the wife's the adult neutrons are trying to get are placed close to another partner that is more attractive then the adult neutron. So in extreme cases, we open the road in between the wife and the better looking partner to <b>eradicate the reaction as a whole</b>.<i> Since implemented, this safety measure has never been used.</i> <br></li>  
+   </ul>
+   <br><br>
+   <p>Keep in mind that these are just three ways that nuclear engineers keep the reaction under control, there are <b>tons</b> of other ways since safety is the <b>biggest worry of utilizers of nuclear power</b>. Anyway I hope you understand just a little bit more about why nuclear reactors don’t blow up, as well as how the operators of the system prevent it.<i> Just another thought I’ll leave you with, a revolution is happening in the nuclear industry, making these super safe reactors even safer as well as more sustainable to use.</i></p>
 <br>
-     
+<br>   
 <br>
-     
-<br>
-     
+<br> 
 <p>&#169; Copyright 2020 Alex Radaelli - All Rights Reserved.</p>
 
 </div>
