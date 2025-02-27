@@ -1,9 +1,8 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Alex Radaelli | Home</title>
+    <title>Alex Radaelli | About Me</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -21,19 +20,17 @@
     <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-
 </head>
 
 <body>
-
     <div id="loader">
         <div class="box-one"></div>
         <div class="box-two"></div>
         <div class="box-three"></div>
         <div class="box-four"></div>
-    </div><!-- /.loader -->
+    </div>
 
-    <section id="home" class="header">
+    <section id="about-me" class="header">
         <div class="sector">
             <h1 class="main-title"> Alexandre Radaelli </h1>
             <h4 class="tagline"> Electrical Engineering Student | Power and Robotics Enthusiast </h4>
@@ -49,15 +46,47 @@
         </ul>
     </nav>
 
-    <section id="home">
+    <section id="about">
         <!-- Big Section Background Title -->
-        <h1 class="section-big-title til hidden-xs hidden-sm" data-in-effect="fadeInUp" data-out-effect="fadeInDown">home</h1><!-- /. large title -->
+        <h1 class="section-big-title til hidden-xs hidden-sm" data-in-effect="fadeInUp" data-out-effect="fadeInDown">about</h1><!-- /. large title -->
 
         <div class="container">
             <div class="row">
-                <!-- Left Column: Image box -->
+                <!-- About Me Content -->
+                <div class="col-sm-8">
+                    <div class="section-holder">
+                        <!-- short bio -->
+                        <div class="icon-holder i-size-big">
+                            <i class="ion-ios-compose-outline"></i>
+                        </div>
+                        <h3 class="section-title"> About Me </h3>
+                        <p>
+                            I'm an Electrical Engineering student who loves working on projects that truly matter. I'm diving deep into hardware, robotics, and power generation—with a particular passion for both nuclear fusion and fission. 
+                            <br/>
+                        </p>
+
+                        <!-- Added images -->
+                        <div class="about-images">
+                            <img src="images/Alex-Fusion.jpg" alt="Fusion" class="about-img">
+                            <img src="images/Alex-Microbot.jpg" alt="Microbot" class="about-img">
+                        </div>
+
+                        <p>
+                            <br/>
+                            Right now, I'm in the midst of building a drone, even designing my own PCB electronic speed controller for quadcopter BLDC motors using STM32 and Altium.
+                            <br/> <br/> 
+                            When I'm not working on tech, you'll likely find me on the soccer field, doing gymnastics, running, or working out at the gym (currently on the recovery from a shoulder dislocation). Also working on improving my flexiblity! As you can see, I'm quite the geek over health.<br/><br/>
+                            In my free time, I also enjoy skiing and rock climbing.
+                            <br/> <br/>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column for both boxes -->
                 <div class="col-sm-4">
+                    <!-- Profile Info Box -->
                     <div class="section-holder texture">
+                        <!-- draw line art -->
                         <div class="line-art-top">
                             <div></div><div></div><div></div><div></div>
                         </div>
@@ -70,20 +99,39 @@
                         <div class="line-art-right">
                             <div></div><div></div><div></div><div></div>
                         </div>
+
                         <div class="img-holder">
                             <img src="Images/Alex-Headshot.jpg" class="img-responsive img-circle" alt="John Doe">
                         </div>
-                    </div>
-                </div>
-        
-                <!-- Right Column: Home Content -->
-                <div class="col-sm-8">
-                    <div class="section-holder">
                         <div class="sep-mini"></div>
-                        <h3 class="section-title"> Home </h3>
-                        <p>
-                            Hi. I'm an electrical engineering student at Carleton. I've done work in robotics, power electronics and nuclear engineering. <a href="/projects.html">Here's</a> some highlight projects I've been working on.
-                        </p>
+                        <h4> Alexandre Radaelli </h4>
+                    </div>
+
+                    <!-- Contact Info Box -->
+                    <div class="section-holder texture">
+                        <!-- draw line art -->
+                        <div class="line-art-top">
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="line-art-bottom">
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="line-art-left">
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="line-art-right">
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+
+                        <h3> Contact Info </h3>
+                        <h5>Email: alexrradaelli@gmail.com</h5>
+                        <div class="social-links">
+                            <a href="https://x.com/alexrradaeli"> <i class="ion-social-twitter-outline i-size-small"></i> </a>
+                            <a href="https://github.com/AlexandreRadaelli"> <i class="ion-social-github-outline i-size-small"></i> </a>
+                        </div>
+                        <a class="tooltip-cl cv-download" data-tooltip="Download CV" href="Resume/ALEXCV2025.pdf"> 
+                            <i class="ion-ios-download-outline i-size-small"></i> 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -114,5 +162,4 @@
     </script>
 
 </body>
-
 </html>
